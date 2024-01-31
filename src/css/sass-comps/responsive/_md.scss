@@ -1,0 +1,35 @@
+@media (max-width: $md) {
+
+  body .ant-pagination{
+    justify-content: center;
+
+    .ant-pagination-total-text{
+      width: 100%;
+      text-align: center;
+    }
+
+    &.right-align{
+
+      .ant-pagination-prev{
+        margin-left: 0;
+      }
+    }
+  }
+
+  body{
+
+    .remmitance-drawer .ant-drawer-content-wrapper{
+      max-width: 100%;
+    }
+
+    // [data-layout="layout-1"] .wrapper .left-sidebar{
+    //   max-width: calc(0.25rem * 16);
+    // }
+
+    [data-navbar="light"] .navbar{
+      position: sticky;
+      z-index: 100;
+      top: 0;
+    }
+  }
+}

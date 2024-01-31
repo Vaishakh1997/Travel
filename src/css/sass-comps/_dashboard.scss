@@ -1,0 +1,48 @@
+.home-bg {
+  // background-image: linear-gradient(to bottom, #051322, #15457c);
+  background: linear-gradient(
+    180deg,
+    #302736 6.03%,
+    rgba(48, 39, 54, 0) 60.95%
+  );
+  background-image: url("../../assets/flights/ic_bg.png");
+  background-position: center;
+  background-size: cover;
+}
+.flight-half-bg {
+  background-color: #302736;
+}
+.btn-primary {
+  // background: linear-gradient(45deg, #53b2fe, #065af3);
+  background: linear-gradient(45deg, #ff4f1a, #f7951c) !important;
+  border: #ff4f1a !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.rdrDefinedRangesWrapper {
+  display: none !important;
+}
+
+.seat {
+  background-color: #ffae96;
+  height: 40px;
+  width: 40px;
+}
+
+.seat--reserved {
+  background-color: blue;
+}
+
+.seat--selected {
+  background-color: #ff4e18;
+}
+.seat-picker__row > *:not(:last-child) {
+  margin-right: 6px;
+}
+.seat-picker > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+.seat-picker__row__number {
+  display: none;
+}

@@ -1,0 +1,147 @@
+body {
+  [data-navbar='light'] .navbar {
+    // background: #fff;
+  }
+  .navbar-1{
+    background: #342a39 !important;
+  }
+
+  .navbar-2{
+    background: #fff !important;
+  }
+
+
+  .left-sidebar-title {
+    height: 2rem;
+
+    span {
+      color: $black;
+      font-size: 11px;
+      white-space: nowrap;
+    }
+  }
+
+  // Tailwind Updates
+
+  .text-blue-link {
+    color: $blue;
+
+    @include hover-focus-active {
+      color: darken($blue, 15);
+    }
+  }
+
+  .sider {
+    &-md {
+      width: 500px;
+    }
+  }
+
+  .message-table tr.ant-table-row td:nth-child(2) {
+    max-width: 170px;
+  }
+
+  .org-table
+    .ant-table-wrapper
+    .ant-table-container
+    .ant-table-thead
+    > tr
+    > th:first-child,
+  .org-table
+    .ant-table-wrapper
+    .ant-table-container
+    .ant-table-tbody
+    > tr
+    > td:first-child {
+    min-width: 100px !important;
+  }
+}
+
+  .ant-card-body {
+    width: 100%;
+    padding: 0;
+    line-height: 1.4;
+  }
+
+.breadcrumbs {
+  li {
+    display: inline-block;
+  }
+}
+
+.tab-content {
+  border-radius: 0 6px 6px 6px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(18, 38, 63, 0.08);
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: '';
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9::before {
+  padding-top: 42.857143%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
+.recent-trans {
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.user-cover {
+  background: url(/images/cover-bg.png) repeat-x;
+}
+
+.rounded-lg > svg {
+  max-width: 90%;
+  overflow: hidden;
+  height: auto;
+}
+
+.table-skeleton {
+  padding-bottom: 15px;
+
+  & > svg {
+    // max-width: 90%;
+    margin: auto;
+    position: relative;
+    left: 15px;
+  }
+}

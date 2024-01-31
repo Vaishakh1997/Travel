@@ -1,0 +1,19 @@
+:root {
+  --blue-500: #007aff;
+  --black: #334155;
+  --green: #22c55e;
+}
+
+@import './sass-comps/dashboard';
+@import './sass-comps/vars';
+@import './sass-comps/mixins';
+@import './sass-comps/base';
+@import './sass-comps/social-media';
+@import './sass-comps/antd';
+@import './sass-comps/layout';
+@import './sass-comps/pdf-viewer';
+@import './sass-comps/slick';
+@import './sass-comps/responsive/xl';
+@import './sass-comps/responsive/lg';
+@import './sass-comps/responsive/md';
+@import './sass-comps/responsive/sm';

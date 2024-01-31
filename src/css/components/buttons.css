@@ -1,0 +1,113 @@
+a,
+input[type='submit'],
+button {
+  @apply outline-none cursor-pointer;
+}
+a:hover,
+a:active,
+a:focus,
+input[type='submit']:hover,
+input[type='submit']:active,
+input[type='submit']:focus,
+button:hover,
+button:active,
+button:focus {
+  @apply outline-none;
+}
+
+.btn {
+  color: #fff;
+  min-width: 200px;
+  @apply rounded-lg py-3 border font-bold;
+  &:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+  &.btn-sm {
+    @apply text-xs px-2 py-1;
+  }
+  &.btn-default {
+    @apply text-xs px-4 py-2;
+  }
+  &.btn-lg {
+    @apply text-base px-6 py-3;
+  }
+  &.btn-rounded {
+    @apply rounded-lg;
+  }
+  &.btn-outlined {
+    @apply border;
+  }
+  &.btn-raised {
+    @apply shadow;
+  }
+  &.btn-icon {
+    @apply flex flex-row items-center justify-center;
+  }
+  &.btn-block {
+    @apply w-full;
+  }
+  &.btn-circle {
+    @apply text-xs h-8 w-8 rounded-full inline-flex items-center justify-center;
+    @apply p-0 !important;
+    &.btn-circle-sm {
+      @apply text-xs h-6 w-6 inline-flex items-center justify-center;
+    }
+    &.btn-circle-lg {
+      @apply text-base h-12 w-12 inline-flex items-center justify-center;
+    }
+  }
+  &.btn-primary {
+    /* background-color: #22c55e;
+    border-color: #22c55e; */
+    background: linear-gradient(45deg, #4a91e0, #113863);
+  }
+  &.btn-danger {
+    background-color: #f2423e;
+    border-color: #f2423e;
+  }
+  &.btn-orange {
+    background-color: #eb5e00;
+    border-color: #eb5e00;
+  }
+  &.btn-blue {
+    background-color: #097fff;
+    border-color: #097fff;
+  }
+  &.btn-grey {
+    background-color: #fff;
+    border-color: #334155;
+    color: #334155;
+  }
+  &.btn-modal {
+    min-width: 160px;
+  }
+  &.btn-primary-grey {
+    @apply rounded-lg py-3 px-16 bg-white border border-grey-800 text-grey-800;
+  }
+  &.btn-modal {
+    background-color: #22c55e;
+    color: #fff;
+    border-color: #22c55e;
+    @apply rounded-lg px-12 py-2 border w-40;
+  }
+  &.btn-modal-danger {
+    background-color: #f2423e;
+    color: #fff;
+    border-color: #f2423e;
+    @apply rounded-lg px-12 py-2 border w-40;
+  }
+  &.btn-modal-grey {
+    @apply rounded-lg px-12 py-2 border bg-white text-grey-800 border-grey-800;
+  }
+}
+
+.btn-group {
+  > .btn {
+    &:first-child {
+      @apply rounded-l border-r-0;
+    }
+    &:last-child {
+      @apply rounded-r border-l-0;
+    }
+  }
+}

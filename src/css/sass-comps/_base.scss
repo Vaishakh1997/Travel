@@ -1,0 +1,93 @@
+::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+body {
+  letter-spacing: 0.01em;
+  color: $black;
+
+  a {
+    color: $black;
+
+    @include hover-focus-active {
+      color: darken($blue, 15);
+      outline: none;
+    }
+  }
+}
+
+#root {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.link {
+  color: $blue;
+}
+
+.shadow-outline-red {
+  box-shadow: 0 0 0 3px theme('colors.red.300');
+}
+.shadow-outline-green {
+  box-shadow: 0 0 0 3px theme('colors.green.300');
+}
+.shadow-outline-white {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 1);
+}
+.shadow-outline-black {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 1);
+}
+
+.react-switch {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.react-icons {
+  vertical-align: middle;
+}
+
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+
+.bg-1 {
+  background: url(/bg-login-1.jpg) no-repeat 0 0 fixed;
+  background-size: cover;
+}
+
+.bg-login-2 {
+  background: url(/bg-login-2.png) no-repeat 0 0 fixed;
+  background-size: cover;
+}
+
+.bg-login-3 {
+  background: url(/bg-login-2.png) no-repeat 0 0 fixed;
+  background-size: cover;
+}
+
+.w-96 {
+  width: calc(theme('spacing.1') * 96);
+}
+
+.w-128 {
+  width: calc(theme('spacing.1') * 128);
+}
+.thumbs-wrapper img {
+  height: 40px !important;
+}
